@@ -22,12 +22,14 @@ package milvus
 
 import (
 	"context"
+	"crypto/tls"
 	"errors"
 	"math"
 	"time"
 
 	pb "github.com/anvuongb/milvus-sdk-go/milvus/grpc/gen"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 type Milvusclient struct {
@@ -47,6 +49,8 @@ func (client *Milvusclient) Connect(connectParam ConnectParam) error {
 	var opts []grpc.DialOption
 	if !connectParam.SSL {
 		opts = append(opts, grpc.WithInsecure())
+	} else {
+		opts = append(opts, grpc.WithTransportCredentials(credentials.NewTLS(&tls.Config{})))
 	}
 
 	opts = append(opts, grpc.WithBlock())
