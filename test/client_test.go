@@ -2,8 +2,9 @@ package test
 
 import (
 	"encoding/json"
-	"github.com/milvus-io/milvus-sdk-go/milvus"
 	"testing"
+
+	"github.com/anvuongb/milvus-sdk-go/milvus"
 )
 
 var TABLENAME string = "go_test"

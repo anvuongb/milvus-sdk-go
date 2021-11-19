@@ -17,13 +17,13 @@ Go 1.12 or higher
 1. Use `go get` to install the latest version of the Milvus Go SDK and dependencies:
 
    ```shell
-   go get -u github.com/milvus-io/milvus-sdk-go/milvus
+   go get -u github.com/anvuongb/milvus-sdk-go/milvus
    ```
 
 2. Include the Milvus Go SDK in your application:
 
    ```shell
-   import "github.com/milvus-io/milvus-sdk-go/milvus"
+   import "github.com/anvuongb/milvus-sdk-go/milvus"
    ```
 
 #### Try an example
@@ -35,7 +35,7 @@ go run MilvusClientExample.go
 
 ### API Documentation
 
-Refer to [https://godoc.org/github.com/milvus-io/milvus-sdk-go/milvus](https://godoc.org/github.com/milvus-io/milvus-sdk-go/milvus) for the GO SDK API documentation.
+Refer to [https://godoc.org/github.com/anvuongb/milvus-sdk-go/milvus](https://godoc.org/github.com/anvuongb/milvus-sdk-go/milvus) for the GO SDK API documentation.
 
 ### Code format
 
