@@ -25,7 +25,7 @@ import (
 	"errors"
 	"math"
 
-	pb "github.com/milvus-io/milvus-sdk-go/milvus/grpc/gen"
+	pb "github.com/anvuongb/milvus-sdk-go/milvus/grpc/gen"
 	"google.golang.org/grpc"
 )
 

@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/milvus"
+	"github.com/anvuongb/milvus-sdk-go/milvus"
 )
 
 var collectionName string = "test_go2"
