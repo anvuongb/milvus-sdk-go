@@ -20,9 +20,10 @@
 package main
 
 import (
-	"github.com/milvus-io/milvus-sdk-go/milvus"
 	"strconv"
 	"time"
+
+	"github.com/anvuongb/milvus-sdk-go/milvus"
 )
 
 var collectionName string = "test_go"

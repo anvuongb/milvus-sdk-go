@@ -20,8 +20,6 @@
 // package milvus
 package milvus
 
-import ()
-
 var clientVersion string = "1.0.0"
 
 // MetricType metric type
@@ -78,6 +76,7 @@ type ConnectParam struct {
 	IPAddress string
 	// Port Server port
 	Port string
+	SSL  bool
 }
 
 // SegmentStat segment statistics
