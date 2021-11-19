@@ -80,6 +80,8 @@ type ConnectParam struct {
 	IPAddress string
 	// Port Server port
 	Port string
+	// Use SSL
+	SSL bool
 }
 
 // SegmentStat segment statistics

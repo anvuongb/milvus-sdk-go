@@ -47,7 +47,10 @@ func (client *Milvusclient) GetClientVersion(ctx context.Context) string {
 
 func (client *Milvusclient) Connect(ctx context.Context, connectParam ConnectParam) error {
 	var opts []grpc.DialOption
-	opts = append(opts, grpc.WithInsecure())
+	if !connectParam.SSL {
+		opts = append(opts, grpc.WithInsecure())
+	}
+
 	opts = append(opts, grpc.WithBlock())
 	opts = append(opts, grpc.WithDefaultCallOptions(grpc.MaxCallSendMsgSize(math.MaxInt64)))
 	opts = append(opts, grpc.WithDefaultCallOptions(grpc.MaxCallRecvMsgSize(math.MaxInt64)))
