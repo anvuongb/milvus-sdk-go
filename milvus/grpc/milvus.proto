@@ -3,7 +3,7 @@ syntax = "proto3";
 import "status.proto";
 
 package milvus.grpc;
-option go_package="github.com/milvus-io/milvus-sdk-go/milvus/grpc/gen";
+option go_package="github.com/anvuongb/milvus-sdk-go/milvus/grpc/gen";
 
 /**
  * @brief general usage
